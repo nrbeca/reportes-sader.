@@ -1,8 +1,8 @@
-# 🌾 SADER - Sistema de Reportes Presupuestarios
+#  SADER - Sistema de Reportes Presupuestarios
 
 Aplicación web para automatizar la generación de reportes presupuestarios de la Secretaría de Agricultura y Desarrollo Rural (SADER).
 
-## 📋 Características
+##  Características
 
 - **MAP (Módulo de Adecuaciones Presupuestarias)**
   - Genera cuadro de presupuesto por programa presupuestario
@@ -14,7 +14,7 @@ Aplicación web para automatizar la generación de reportes presupuestarios de l
   - Agrupa por Sector Central, Oficinas, Órganos Desconcentrados y Entidades Paraestatales
   - Calcula ejercido real (ejercido + devengado + en trámite)
 
-## 🚀 Instalación Local
+##  Instalación Local
 
 ```bash
 # Clonar o descargar el proyecto
@@ -52,7 +52,7 @@ La aplicación estará disponible en `http://localhost:8501`
 3. Sube los archivos del proyecto
 4. Streamlit detectará automáticamente `app.py`
 
-## 📁 Estructura del Proyecto
+##  Estructura del Proyecto
 
 ```
 sader-reportes/
@@ -66,14 +66,14 @@ sader-reportes/
 └── README.md              # Este archivo
 ```
 
-## 📊 Uso
+##  Instrucciones
 
 1. **Selecciona el tipo de reporte** en el menú lateral (MAP o SICOP)
 2. **Sube el archivo CSV** exportado del sistema correspondiente
 3. **Revisa los resultados** en las pestañas de visualización
 4. **Descarga el reporte** en formato Excel o CSV
 
-## ⚙️ Configuración Automática
+##  Configuración Automática
 
 La aplicación detecta automáticamente:
 
@@ -81,7 +81,7 @@ La aplicación detecta automáticamente:
 - **Configuración de año** (2025 vs 2026) para usar los programas/URs correctos
 - **Mes del periodo** para calcular modificados y congelados al periodo
 
-## 🔧 Personalización
+##  Personalización
 
 ### Agregar nuevos programas (MAP)
 
@@ -95,15 +95,8 @@ Edita `modules/config.py` y agrega la UR en:
 - `DENOMINACIONES_2026`
 - La lista correspondiente: `SECTOR_CENTRAL_2026`, `OFICINAS_2026`, etc.
 
-## 📝 Notas
 
-- Los archivos CSV deben tener codificación `latin-1` (ISO-8859-1)
-- El formato del nombre de archivo esperado es `DD-MMM-YYYY_SISTEMA.csv`
-- La aplicación maneja automáticamente el cierre de año anterior (enero/febrero)
 
-## 👥 Soporte
-
-Para reportar problemas o sugerir mejoras, contacta al área de Presupuesto de la UAF.
 
 ---
 
